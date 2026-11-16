@@ -167,6 +167,34 @@ img {
     font-size: 1.05rem;
 }
 
+/* ===== TITULO DAS PAGINAS INTERNAS ===== */
+.titulo-pagina {
+    background-color: var(--verde-escuro);
+    color: var(--branco);
+    padding: 50px 0;
+}
+
+.titulo-pagina h1 {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+}
+
+/* ===== LISTA COM MARCADOR ===== */
+.lista {
+    max-width: 750px;
+    padding-left: 22px;
+    color: var(--cinza);
+    font-size: 1.05rem;
+}
+
+.lista li {
+    margin-bottom: 8px;
+}
+
+.lista li::marker {
+    color: var(--laranja);
+}
+
 /* ===== CARDS ===== */
 .cards {
     display: grid;
