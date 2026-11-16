@@ -1,0 +1,278 @@
+/* ===== CORES E FONTES DO SITE ===== */
+:root {
+    --verde: #2e7d32;
+    --verde-escuro: #1b5e20;
+    --laranja: #ef6c00;
+    --creme: #fdf8f0;
+    --texto: #2b2b2b;
+    --cinza: #5f5f5f;
+    --branco: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--texto);
+    background-color: var(--branco);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* ===== CABECALHO E MENU ===== */
+.cabecalho {
+    background-color: var(--verde);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.cabecalho-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 40px;
+}
+
+.menu ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu a {
+    color: var(--branco);
+    text-decoration: none;
+    padding: 4px 0;
+    border-bottom: 2px solid transparent;
+}
+
+.menu a:hover,
+.menu a.ativo {
+    border-bottom: 2px solid var(--laranja);
+}
+
+/* botao hamburguer (so aparece no celular) */
+.menu-botao {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+}
+
+.menu-botao span {
+    display: block;
+    width: 26px;
+    height: 3px;
+    background-color: var(--branco);
+    margin: 5px 0;
+}
+
+/* ===== BOTOES ===== */
+.botao {
+    display: inline-block;
+    background-color: var(--laranja);
+    color: var(--branco);
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid var(--laranja);
+}
+
+.botao:hover {
+    background-color: #d35400;
+}
+
+.botao-contorno {
+    background-color: transparent;
+    border-color: var(--branco);
+}
+
+.botao-contorno:hover {
+    background-color: var(--branco);
+    color: var(--verde);
+}
+
+/* ===== BANNER ===== */
+.banner {
+    background-color: var(--verde-escuro);
+    color: var(--branco);
+    padding: 80px 0;
+}
+
+.banner h1 {
+    font-size: 2.6rem;
+    margin-bottom: 16px;
+}
+
+.banner p {
+    font-size: 1.15rem;
+    max-width: 600px;
+    margin-bottom: 28px;
+}
+
+.banner-botoes {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+/* ===== SECOES ===== */
+.secao {
+    padding: 60px 0;
+}
+
+.secao-clara {
+    background-color: var(--creme);
+}
+
+.secao h2 {
+    color: var(--verde);
+    font-size: 1.9rem;
+    margin-bottom: 20px;
+}
+
+.secao-texto {
+    max-width: 750px;
+    color: var(--cinza);
+    font-size: 1.05rem;
+}
+
+/* ===== CARDS ===== */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.card {
+    background-color: var(--branco);
+    border: 1px solid #e3e3e3;
+    border-radius: 10px;
+    padding: 24px;
+}
+
+.card h3 {
+    color: var(--verde-escuro);
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: var(--cinza);
+}
+
+.card-numero {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background-color: var(--laranja);
+    color: var(--branco);
+    border-radius: 50%;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+/* ===== RODAPE ===== */
+.rodape {
+    background-color: var(--texto);
+    color: #dddddd;
+    text-align: center;
+    padding: 24px 0;
+    font-size: 0.9rem;
+}
+
+/* ===== RESPONSIVO ===== */
+
+/* tablet */
+@media (max-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .banner h1 {
+        font-size: 2.2rem;
+    }
+}
+
+/* celular */
+@media (max-width: 768px) {
+    .menu-botao {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--verde);
+    }
+
+    /* classe colocada pelo javascript quando clica no botao */
+    .menu.aberto {
+        display: block;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 0;
+        padding: 10px 5%;
+    }
+
+    .menu li {
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .menu a {
+        display: block;
+        padding: 12px 0;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .banner {
+        padding: 50px 0;
+    }
+
+    .banner h1 {
+        font-size: 1.8rem;
+    }
+
+    .secao {
+        padding: 40px 0;
+    }
+}
