@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conecta Food | FAQ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div class="container cabecalho-conteudo">
+            <a href="index.html" class="logo">
+                <img src="assets/img/logo.svg" alt="Logo do Conecta Food">
+                <span>Conecta Food</span>
+            </a>
+
+            <button class="menu-botao" id="menu-botao" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="menu" id="menu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="doacoes.html">Doações</a></li>
+                    <li><a href="impacto.html">Impacto</a></li>
+                    <li><a href="faq.html" class="ativo">FAQ</a></li>
+                    <li><a href="integrantes.html">Integrantes</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="titulo-pagina">
+            <div class="container">
+                <h1>Perguntas frequentes</h1>
+                <p>Tire suas dúvidas sobre como doar e como receber alimentos pelo Conecta Food.</p>
+            </div>
+        </section>
+
+        <section class="secao">
+            <div class="container">
+                <h2>Para quem doa</h2>
+
+                <!-- acordeao: clicar na pergunta abre ou fecha a resposta (o javascript coloca a classe "aberto" no item) -->
+                <div class="acordeao">
+                    <article class="acordeao-item">
+                        <h3>
+                            <button class="acordeao-pergunta" aria-expanded="false">
+                                Quem pode doar alimentos?
+                                <span class="acordeao-icone" aria-hidden="true">+</span>
+                            </button>
+                        </h3>
+                        <div class="acordeao-resposta">
+                            <p>Mercados, padarias, restaurantes, feiras e pequenos produtores. O cadastro é feito com o CNPJ do estabelecimento.</p>
+                        </div>
+                    </article>
+
+                    <article class="acordeao-item">
+                        <h3>
+                            <button class="acordeao-pergunta" aria-expanded="false">
+                                Posso doar alimento perto do vencimento?
+                                <span class="acordeao-icone" aria-hidden="true">+</span>
+                            </button>
+                        </h3>
+                        <div class="acordeao-resposta">
+                            <p>Pode, desde que ainda esteja dentro da validade. O sistema não aceita itens já vencidos e usa a menor validade entre os itens para definir até quando a doação precisa ser retirada.</p>
+                        </div>
+                    </article>
+
+                    <article class="acordeao-item">
+                        <h3>
+                            <button class="acordeao-pergunta" aria-expanded="false">
+                                E se nenhuma ONG reservar a minha doação?
+                                <span class="acordeao-icone" aria-hidden="true">+</span>
+                            </button>
+                        </h3>
+                        <div class="acordeao-resposta">
+                            <p>Se ninguém reservar até a data limite, a doação fica como vencida e sai da vitrine. Enquanto ela estiver disponível, você também pode cancelá-la.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao secao-clara">
+            <div class="container">
+                <h2>Para ONGs</h2>
+
+                <div class="acordeao">
+                    <article class="acordeao-item">
+                        <h3>
+                            <button class="acordeao-pergunta" aria-expanded="false">
+                                Como a minha ONG reserva uma doação?
+                                <span class="acordeao-icone" aria-hidden="true">+</span>
+                            </button>
+                        </h3>
+                        <div class="acordeao-resposta">
+                            <p>Na página de doações, escolha uma doação disponível e faça a reserva. A primeira ONG que reservar garante a doação, e ela sai da vitrine para as outras.</p>
+                        </div>
+                    </article>
+
+                    <article class="acordeao-item">
+                        <h3>
+                            <button class="acordeao-pergunta" aria-expanded="false">
+                                Quantas doações posso reservar ao mesmo tempo?
+                                <span class="acordeao-icone" aria-hidden="true">+</span>
+                            </button>
+                        </h3>
+                        <div class="acordeao-resposta">
+                            <p>No máximo 3 reservas abertas por vez. Esse limite existe para que as doações sejam divididas de forma justa entre todas as ONGs.</p>
+                        </div>
+                    </article>
+
+                    <article class="acordeao-item">
+                        <h3>
+                            <button class="acordeao-pergunta" aria-expanded="false">
+                                Por que não consigo reservar algumas doações?
+                                <span class="acordeao-icone" aria-hidden="true">+</span>
+                            </button>
+                        </h3>
+                        <div class="acordeao-resposta">
+                            <p>A ONG só pode reservar as categorias que ela aceita. Por exemplo, uma ONG sem geladeira não recebe laticínios, para o alimento não estragar.</p>
+                        </div>
+                    </article>
+
+                    <article class="acordeao-item">
+                        <h3>
+                            <button class="acordeao-pergunta" aria-expanded="false">
+                                E se a ONG não puder mais buscar?
+                                <span class="acordeao-icone" aria-hidden="true">+</span>
+                            </button>
+                        </h3>
+                        <div class="acordeao-resposta">
+                            <p>É só cancelar a reserva. A doação volta a ficar disponível na vitrine para outra ONG reservar.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao">
+            <div class="container">
+                <h2>Não achou sua dúvida?</h2>
+                <p class="secao-texto">Mande sua pergunta para a nossa equipe.</p>
+                <a href="contato.html" class="botao botao-espaco">Fale conosco</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>Conecta Food - Global Solution FIAP 2026</p>
+            <p>ODS 2 Fome Zero | ODS 11 Cidades Sustentáveis</p>
+        </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/faq.js"></script>
+</body>
+</html>

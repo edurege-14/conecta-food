@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conecta Food | Doações</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div class="container cabecalho-conteudo">
+            <a href="index.html" class="logo">
+                <img src="assets/img/logo.svg" alt="Logo do Conecta Food">
+                <span>Conecta Food</span>
+            </a>
+
+            <button class="menu-botao" id="menu-botao" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="menu" id="menu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="doacoes.html" class="ativo">Doações</a></li>
+                    <li><a href="impacto.html">Impacto</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="integrantes.html">Integrantes</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="titulo-pagina">
+            <div class="container">
+                <h1>Doações disponíveis</h1>
+                <p>Veja o que os doadores publicaram e filtre pela categoria que a sua ONG aceita.</p>
+            </div>
+        </section>
+
+        <section class="secao">
+            <div class="container">
+                <h2>Vitrine de doações</h2>
+
+                <!-- botoes do filtro: o data-categoria diz qual categoria cada botao mostra -->
+                <div class="filtros" role="group" aria-label="Filtrar doações por categoria">
+                    <button class="filtro-botao ativo" data-categoria="todas">Todas</button>
+                    <button class="filtro-botao" data-categoria="paes">Pães</button>
+                    <button class="filtro-botao" data-categoria="hortifruti">Hortifruti</button>
+                    <button class="filtro-botao" data-categoria="laticinios">Laticínios</button>
+                    <button class="filtro-botao" data-categoria="graos">Grãos</button>
+                    <button class="filtro-botao" data-categoria="refeicoes">Refeições prontas</button>
+                </div>
+
+                <p class="contador" id="contador" aria-live="polite">Doações encontradas: 6</p>
+
+                <!-- cada card tem data-categoria: o javascript compara com o botao clicado -->
+                <div class="cards" id="lista-doacoes">
+                    <article class="card doacao" data-categoria="paes">
+                        <span class="etiqueta">Pães</span>
+                        <h3>Pães franceses e de forma</h3>
+                        <p class="doacao-doador">Padaria Pão Dourado</p>
+                        <ul class="doacao-info">
+                            <li><strong>Quantidade:</strong> 8 kg</li>
+                            <li><strong>Local:</strong> Vila Mariana, São Paulo</li>
+                            <li><strong>Retirar até:</strong> 18/11/2026</li>
+                        </ul>
+                        <span class="status">Disponível</span>
+                    </article>
+
+                    <article class="card doacao" data-categoria="hortifruti">
+                        <span class="etiqueta">Hortifruti</span>
+                        <h3>Bananas e maçãs</h3>
+                        <p class="doacao-doador">Mercado Bom Preço</p>
+                        <ul class="doacao-info">
+                            <li><strong>Quantidade:</strong> 15 kg</li>
+                            <li><strong>Local:</strong> Moema, São Paulo</li>
+                            <li><strong>Retirar até:</strong> 19/11/2026</li>
+                        </ul>
+                        <span class="status">Disponível</span>
+                    </article>
+
+                    <article class="card doacao" data-categoria="laticinios">
+                        <span class="etiqueta">Laticínios</span>
+                        <h3>Iogurtes e queijo minas</h3>
+                        <p class="doacao-doador">Mercado Bom Preço</p>
+                        <ul class="doacao-info">
+                            <li><strong>Quantidade:</strong> 6 kg</li>
+                            <li><strong>Local:</strong> Moema, São Paulo</li>
+                            <li><strong>Retirar até:</strong> 17/11/2026</li>
+                        </ul>
+                        <span class="status">Disponível</span>
+                    </article>
+
+                    <article class="card doacao" data-categoria="graos">
+                        <span class="etiqueta">Grãos</span>
+                        <h3>Arroz e feijão (embalagem amassada)</h3>
+                        <p class="doacao-doador">Mercado Bom Preço</p>
+                        <ul class="doacao-info">
+                            <li><strong>Quantidade:</strong> 20 kg</li>
+                            <li><strong>Local:</strong> Moema, São Paulo</li>
+                            <li><strong>Retirar até:</strong> 30/11/2026</li>
+                        </ul>
+                        <span class="status">Disponível</span>
+                    </article>
+
+                    <article class="card doacao" data-categoria="refeicoes">
+                        <span class="etiqueta">Refeições prontas</span>
+                        <h3>Marmitas do almoço</h3>
+                        <p class="doacao-doador">Restaurante Sabor Caseiro</p>
+                        <ul class="doacao-info">
+                            <li><strong>Quantidade:</strong> 12 kg</li>
+                            <li><strong>Local:</strong> Centro, Campinas</li>
+                            <li><strong>Retirar até:</strong> 16/11/2026</li>
+                        </ul>
+                        <span class="status">Disponível</span>
+                    </article>
+
+                    <article class="card doacao" data-categoria="paes">
+                        <span class="etiqueta">Pães</span>
+                        <h3>Bolos e pães doces</h3>
+                        <p class="doacao-doador">Padaria Pão Dourado</p>
+                        <ul class="doacao-info">
+                            <li><strong>Quantidade:</strong> 5 kg</li>
+                            <li><strong>Local:</strong> Vila Mariana, São Paulo</li>
+                            <li><strong>Retirar até:</strong> 18/11/2026</li>
+                        </ul>
+                        <span class="status">Disponível</span>
+                    </article>
+                </div>
+
+                <p class="aviso-vazio escondido" id="aviso-vazio">Nenhuma doação dessa categoria no momento. Volte mais tarde!</p>
+            </div>
+        </section>
+
+        <section class="secao secao-clara">
+            <div class="container">
+                <h2>Como reservar</h2>
+                <ul class="lista">
+                    <li>A ONG só pode reservar doações das categorias que ela aceita.</li>
+                    <li>Cada doação pode ser reservada por apenas uma ONG.</li>
+                    <li>Cada ONG pode ter no máximo 3 reservas abertas ao mesmo tempo.</li>
+                    <li>A retirada precisa acontecer até a data indicada no card.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>Conecta Food - Global Solution FIAP 2026</p>
+            <p>ODS 2 Fome Zero | ODS 11 Cidades Sustentáveis</p>
+        </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/filtro.js"></script>
+</body>
+</html>
