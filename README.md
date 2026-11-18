@@ -1,9 +1,9 @@
 # Conecta Food
 
 ## Descricao
-Todo dia mercados, padarias e restaurantes descartam alimentos que ainda estao bons para consumo, enquanto ONGs e abrigos nao tem comida suficiente para quem atendem. O **Conecta Food** e uma plataforma que conecta quem tem alimento sobrando a quem precisa: o doador publica a doacao, o sistema sugere as ONGs mais proximas, a ONG reserva e busca o alimento.
+Todos os dias mercados, padarias e restaurantes descartam alimentos que ainda estao bons para consumo, enquanto ONGs e abrigos nao tem comida suficiente para quem atendem. O Conecta Food é uma plataforma que conecta quem tem alimento sobrando a quem precisa de verdade. O doador publica a doacao, o sistema sugere as ONGs mais proximas, a ONG reserva e busca o alimento.
 
-Projeto desenvolvido para a Global Solution 2026/2 da FIAP (tema CitizenTech).
+Projeto desenvolvido para a Global Solution da FIAP (tema CitizenTech).
 
 ## Tecnologias utilizadas
 - HTML5
@@ -33,10 +33,11 @@ conecta-food/
 └── README.md
 ```
 
-## Autores
+## Autor
 | Nome | RM | Turma | GitHub | LinkedIn |
 |---|---|---|---|---|
-| (seu nome completo) | (RM) | 1TDS | (link) | (link) |
+| Eduardo Regenold da Costa Lima | 574720 | 1TDSPB | [edurege-14](https://github.com/edurege-14) | [Eduardo Regenold](https://www.linkedin.com/in/eduardo-regenold-b09bab397/) |
+
 
 ## Imagens do projeto
 (em construcao)
@@ -45,7 +46,7 @@ conecta-food/
 https://github.com/edurege-14/conecta-food
 
 ## Contato
-(seu e-mail)
+eduregenold@gmail.com
 
 ## Uso de IA
 (em construcao)
