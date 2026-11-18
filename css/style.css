@@ -354,6 +354,157 @@ img {
     display: block;
 }
 
+/* botao verde (para ficar ao lado do laranja) */
+.botao-verde {
+    background-color: var(--verde);
+    border-color: var(--verde);
+}
+
+.botao-verde:hover {
+    background-color: var(--verde-escuro);
+}
+
+/* ===== NUMEROS DO IMPACTO ===== */
+.numeros {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.numero {
+    background-color: var(--creme);
+    border-radius: 10px;
+    padding: 24px;
+    text-align: center;
+}
+
+.numero-valor {
+    color: var(--laranja);
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.numero-legenda {
+    color: var(--cinza);
+}
+
+.nota {
+    color: var(--cinza);
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-top: 16px;
+}
+
+/* ===== FORMULARIO DE CONTATO ===== */
+.formulario {
+    max-width: 600px;
+}
+
+.campo {
+    margin-bottom: 18px;
+}
+
+.campo label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bdbdbd;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    outline: 2px solid var(--verde);
+    border-color: var(--verde);
+}
+
+/* classe colocada pelo javascript quando o campo esta errado */
+.campo .campo-erro {
+    border: 2px solid #c62828;
+}
+
+.mensagem-erro {
+    color: #c62828;
+    font-size: 0.9rem;
+    margin-top: 4px;
+}
+
+.mensagem-sucesso {
+    background-color: #e8f5e9;
+    color: var(--verde-escuro);
+    border: 1px solid var(--verde);
+    border-radius: 6px;
+    padding: 14px;
+    margin-top: 18px;
+    font-weight: bold;
+}
+
+/* ===== INTEGRANTES ===== */
+.integrantes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.integrante {
+    background-color: var(--branco);
+    border: 1px solid #e3e3e3;
+    border-radius: 10px;
+    padding: 28px;
+    text-align: center;
+    width: 300px;
+    max-width: 100%;
+}
+
+.integrante-foto {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 14px;
+}
+
+.integrante h3 {
+    color: var(--verde-escuro);
+    margin-bottom: 6px;
+}
+
+.integrante p {
+    color: var(--cinza);
+}
+
+.integrante-links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.integrante-links a {
+    color: var(--verde);
+    font-weight: bold;
+    border: 2px solid var(--verde);
+    border-radius: 6px;
+    padding: 6px 16px;
+    text-decoration: none;
+}
+
+.integrante-links a:hover {
+    background-color: var(--verde);
+    color: var(--branco);
+}
+
 /* ===== RODAPE ===== */
 .rodape {
     background-color: var(--texto);
@@ -368,6 +519,10 @@ img {
 /* tablet */
 @media (max-width: 900px) {
     .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .numeros {
         grid-template-columns: repeat(2, 1fr);
     }
 

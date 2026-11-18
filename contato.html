@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conecta Food | Contato</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div class="container cabecalho-conteudo">
+            <a href="index.html" class="logo">
+                <img src="assets/img/logo.svg" alt="Logo do Conecta Food">
+                <span>Conecta Food</span>
+            </a>
+
+            <button class="menu-botao" id="menu-botao" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="menu" id="menu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="doacoes.html">Doações</a></li>
+                    <li><a href="impacto.html">Impacto</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="integrantes.html">Integrantes</a></li>
+                    <li><a href="contato.html" class="ativo">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="titulo-pagina">
+            <div class="container">
+                <h1>Fale conosco</h1>
+                <p>Quer doar, cadastrar a sua ONG ou tirar uma dúvida? Mande uma mensagem.</p>
+            </div>
+        </section>
+
+        <section class="secao">
+            <div class="container">
+                <h2>Envie sua mensagem</h2>
+
+                <!-- novalidate: desliga a validacao do navegador, quem valida e o nosso javascript -->
+                <form class="formulario" id="form-contato" novalidate>
+                    <div class="campo">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome">
+                        <p class="mensagem-erro" id="erro-nome"></p>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com">
+                        <p class="mensagem-erro" id="erro-email"></p>
+                    </div>
+
+                    <div class="campo">
+                        <label for="assunto">Assunto</label>
+                        <select id="assunto" name="assunto">
+                            <option value="">Escolha um assunto</option>
+                            <option value="doar">Quero doar alimentos</option>
+                            <option value="ong">Quero cadastrar minha ONG</option>
+                            <option value="duvida">Tenho uma dúvida</option>
+                            <option value="outro">Outro assunto</option>
+                        </select>
+                        <p class="mensagem-erro" id="erro-assunto"></p>
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem"></textarea>
+                        <p class="mensagem-erro" id="erro-mensagem"></p>
+                    </div>
+
+                    <button type="submit" class="botao">Enviar mensagem</button>
+
+                    <p class="mensagem-sucesso escondido" id="mensagem-sucesso" role="status">Mensagem enviada com sucesso! Responderemos em breve.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>Conecta Food - Global Solution FIAP 2026</p>
+            <p>ODS 2 Fome Zero | ODS 11 Cidades Sustentáveis</p>
+        </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/contato.js"></script>
+</body>
+</html>

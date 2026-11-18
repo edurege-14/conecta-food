@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conecta Food | Impacto</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div class="container cabecalho-conteudo">
+            <a href="index.html" class="logo">
+                <img src="assets/img/logo.svg" alt="Logo do Conecta Food">
+                <span>Conecta Food</span>
+            </a>
+
+            <button class="menu-botao" id="menu-botao" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="menu" id="menu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="doacoes.html">Doações</a></li>
+                    <li><a href="impacto.html" class="ativo">Impacto</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="integrantes.html">Integrantes</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="titulo-pagina">
+            <div class="container">
+                <h1>Nosso impacto</h1>
+                <p>Cada doação retirada é comida que não foi para o lixo e virou refeição para alguém.</p>
+            </div>
+        </section>
+
+        <section class="secao">
+            <div class="container">
+                <h2>Impacto da vitrine atual</h2>
+                <p class="secao-texto">Se todas as doações publicadas hoje na página de doações forem retiradas pelas ONGs:</p>
+
+                <div class="numeros">
+                    <article class="numero">
+                        <p class="numero-valor">66 kg</p>
+                        <p class="numero-legenda">de alimento salvo do lixo</p>
+                    </article>
+                    <article class="numero">
+                        <p class="numero-valor">132</p>
+                        <p class="numero-legenda">refeições estimadas</p>
+                    </article>
+                    <article class="numero">
+                        <p class="numero-valor">6</p>
+                        <p class="numero-legenda">doações disponíveis</p>
+                    </article>
+                    <article class="numero">
+                        <p class="numero-valor">3</p>
+                        <p class="numero-legenda">doadores participando</p>
+                    </article>
+                </div>
+
+                <p class="nota">Números do protótipo, calculados com as doações de exemplo do site.</p>
+            </div>
+        </section>
+
+        <section class="secao secao-clara">
+            <div class="container">
+                <h2>Como calculamos</h2>
+                <div class="cards">
+                    <article class="card">
+                        <span class="card-numero">1</span>
+                        <h3>Somamos os quilos</h3>
+                        <p>Entram na conta só as doações que a ONG realmente retirou.</p>
+                    </article>
+                    <article class="card">
+                        <span class="card-numero">2</span>
+                        <h3>Convertemos em refeições</h3>
+                        <p>Consideramos que 1 refeição usa cerca de 500 g de alimento. Então: refeições = kg ÷ 0,5.</p>
+                    </article>
+                    <article class="card">
+                        <span class="card-numero">3</span>
+                        <h3>Mostramos o resultado</h3>
+                        <p>Doadores e ONGs acompanham quanto desperdício já ajudaram a evitar.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao">
+            <div class="container">
+                <h2>O que acompanhamos</h2>
+                <ul class="lista">
+                    <li>Quilos de alimento retirados, que deixaram de ir para o lixo.</li>
+                    <li>Refeições estimadas a partir desses quilos.</li>
+                    <li>Número de ONGs atendidas e de doadores ativos.</li>
+                    <li>Percentual de doações que venceram sem ninguém retirar, para saber o que melhorar.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="secao secao-clara">
+            <div class="container">
+                <h2>Quer fazer parte?</h2>
+                <p class="secao-texto">Veja as doações disponíveis ou fale com a gente para cadastrar o seu estabelecimento ou a sua ONG.</p>
+                <div class="banner-botoes botao-espaco">
+                    <a href="doacoes.html" class="botao">Ver doações</a>
+                    <a href="contato.html" class="botao botao-verde">Fale conosco</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>Conecta Food - Global Solution FIAP 2026</p>
+            <p>ODS 2 Fome Zero | ODS 11 Cidades Sustentáveis</p>
+        </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+</body>
+</html>
