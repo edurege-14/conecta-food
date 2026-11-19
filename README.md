@@ -29,7 +29,8 @@ conecta-food/
 │   ├── faq.js        -> abre e fecha as respostas do FAQ
 │   └── contato.js    -> validacao do formulario de contato
 ├── assets/
-│   └── img/          -> logo e imagens
+│   └── img/          -> logo, foto e imagens
+│       └── prints/   -> prints das telas usados neste README
 └── README.md
 ```
 
@@ -40,7 +41,27 @@ conecta-food/
 
 
 ## Imagens do projeto
-(em construcao)
+
+### Pagina inicial
+![Pagina inicial do Conecta Food](assets/img/prints/index.png)
+
+### Vitrine de doacoes com filtro por categoria
+![Vitrine de doacoes com os botoes de filtro](assets/img/prints/doacoes.png)
+
+### Impacto (quilos salvos e refeicoes estimadas)
+![Pagina de impacto com os numeros da plataforma](assets/img/prints/impacto.png)
+
+### Perguntas frequentes (acordeao)
+![Pagina de perguntas frequentes](assets/img/prints/faq.png)
+
+### Contato com validacao do formulario
+![Formulario de contato](assets/img/prints/contato.png)
+
+### Integrantes
+![Pagina de integrantes](assets/img/prints/integrantes.png)
+
+### Versao para celular (menu hamburguer)
+<img src="assets/img/prints/celular.png" alt="Pagina inicial no celular" width="300">
 
 ## Repositorio
 https://github.com/edurege-14/conecta-food
@@ -49,4 +70,11 @@ https://github.com/edurege-14/conecta-food
 eduregenold@gmail.com
 
 ## Uso de IA
-(em construcao)
+Ferramenta usada: Claude
+
+Para que foi usada:
+- ajuda com conceitos especificos. Como o filtro e acordeao;
+- ajudar a revisar trechos de codigo e a encontrar erros;
+- ajuda para fazer tabelas ou "formulario" como o do README;
+
+
